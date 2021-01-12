@@ -7,4 +7,6 @@ include_directories(include/
         3rdparty/
         src/jsonutil/)
 
-add_executable(JsonUtils sample/main.cpp src/jsonutil/CJsonUtils.cpp)
+#add_executable(JsonUtils sample/main.cpp src/jsonutil/CJsonUtils.cpp src/callback/MyCallback.h src/callback/Finance.cpp src/callback/MainCallbackSample.cpp)
+
+add_executable(CallbackSample sample/callback/MyCallback.h sample/callback/Finance.cpp sample/callback/MainCallbackSample.cpp sample/callback/MyFinance.cpp sample/callback/MyFinance.h)
