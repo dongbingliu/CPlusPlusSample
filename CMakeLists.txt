@@ -19,4 +19,9 @@ add_executable(CallbackSample sample/callback/MyCallback.h sample/callback/Finan
 add_executable(ThreadSample ${SRCS} sample/thread/ThreadSample.cpp sample/thread/ThreadSample.h sample/thread/threadpool.h)
 
 #pthread 线程sample
-add_executable(PThreadSample ${SRCS} sample/thread/PThreadSample.cpp sample/thread/PThreadSample.h)
+add_executable(PThreadSample ${SRCS} sample/thread/PThreadSample.cpp sample/thread/PThreadSample.h)#pthread 线程sample
+
+#add_executable(EncryptedSample ${SRCS} sample/encrypted/EncryptedSample.cpp sample/encrypted/AES.cpp sample/encrypted/AES.cpp)
+
+#ReadInitFile sample
+add_executable(ReadIniFileSample ${SRCS} sample/readIniFile/ReadIniFileSample.cpp sample/readIniFile/iniFileUtils.cpp sample/readIniFile/iniFileUtils.h)
