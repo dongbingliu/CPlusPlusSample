@@ -27,10 +27,22 @@ int main() {
     const char *stringValue = ini->getStringValue("section2", "stringValue");
     bool boolValue = ini->getBoolValue("section2", "boolValue");
 
+    const char *epic_product_name = ini->getStringValue("Epic","EPIC_PRODUCT_NAME");
+    const char *epic_product_version = ini->getStringValue("Epic","EPIC_PRODUCT_VERSION");
+    const char *epic_product_id = ini->getStringValue("Epic","EPIC_PRODUCT_ID");
+    const char *epic_sandbox_id = ini->getStringValue("Epic","EPIC_SANDBOX_ID");
+    const char *epic_deployment_id = ini->getStringValue("Epic","EPIC_DEPLOYMENT_ID");
+    const char *epic_client_id = ini->getStringValue("Epic","EPIC_CLIENT_ID");
+    const char *epic_client_secret = ini->getStringValue("Epic","EPIC_CLIENT_SECRET");
+
     cout<<"[section1]-intValue:\t"<<intValue<<endl;
     cout<<"[section1]-floatValue:\t"<<floatValue<<endl;
     cout<<"[section2]-stringValue:\t"<<stringValue<<endl;
     cout<<"[section2]-boolValue:\t"<<boolValue<<endl;
+
+    cout<<"[section2]-epic_product_name:\t"<<epic_product_name<<endl;
+    cout<<"[section2]-epic_product_version:\t"<<epic_product_version<<endl;
+    cout<<"[section2]-epic_product_id:\t"<<epic_product_id<<endl;
 
     delete ini;
     return 0;
